@@ -15,7 +15,7 @@ set -o pipefail
 
 
 # Usage:
-# cf-ddns.sh -k cloudflare-api-key \
+# cf-ddns.sh -k cloudflare-api-token \
 #            -h host.example.com \     # fqdn of the record you want to update
 #            -z example.com \          # will show you all zones if forgot, but you need this
 #            -t A|AAAA                 # specify ipv4/ipv6, default: ipv4
@@ -25,8 +25,8 @@ set -o pipefail
 
 # default config
 
-# API key, see https://www.cloudflare.com/a/account/my-account,
-# incorrect api-key results in E_UNAUTH error
+# API Token, see https://www.cloudflare.com/a/account/my-account,
+# incorrect api-token results in E_UNAUTH error
 CFTOKEN=
 
 # Zone name, eg: example.com

@@ -8,8 +8,8 @@ cf-ddns.sh -k cloudflare-api-token \
            -z example.com \          # will show you all zones if forgot, but you need this
            -t A|AAAA                 # specify ipv4/ipv6, default: ipv4
 ```
-You need an [api-token](https://www.cloudflare.com/a/account/my-account) that have read access to `Zone.Zone`, and write access to `Zone.DNS`.
+You need an [API Token](https://dash.cloudflare.com/profile/api-tokens) that have read access to `Zone.Zone`, and write access to `Zone.DNS`.
   
 # Feature
-- Use API-token instead of Global API key  
-- Support Openwrt
+- Use API Token instead of Global API key  
+- Support OpenWrt
